@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Job from './Job';
 
 const url = 'https://course-api.com/react-tabs-project';
 
@@ -24,7 +25,12 @@ function App() {
 
   console.log(jobs);
 
-  return <h1>h</h1>;
+  return (
+    <main>
+      {/* button */}
+      <Job jobs={jobs} />
+    </main>
+  );
 }
 
 export default App;
