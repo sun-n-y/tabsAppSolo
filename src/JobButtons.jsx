@@ -4,6 +4,7 @@ const JobButtons = ({ jobs, buttonClick }) => {
       {jobs.map((job, index) => {
         return (
           <button
+            className="btn"
             type="button"
             onClick={() => {
               buttonClick(index);
