@@ -1,7 +1,7 @@
 import JobDuties from './JobDuties';
 
-const Job = ({ jobs }) => {
-  const { title, company, dates, duties } = jobs[0];
+const Job = ({ jobs, activeIndex }) => {
+  const { title, company, dates, duties } = jobs[activeIndex];
   return (
     <div className="job">
       <div className="job-header">
