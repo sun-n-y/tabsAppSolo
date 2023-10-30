@@ -23,8 +23,6 @@ function App() {
     return <h1>loading...</h1>;
   }
 
-  console.log(jobs);
-
   return (
     <main>
       {/* button */}
