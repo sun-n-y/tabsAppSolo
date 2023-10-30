@@ -1,10 +1,10 @@
-const JobButtons = ({ jobs, buttonClick }) => {
+const JobButtons = ({ jobs, buttonClick, activeIndex }) => {
   return (
     <div className="btn-container">
       {jobs.map((job, index) => {
         return (
           <button
-            className="btn"
+            className={activeIndex === index ? 'btn active-btn' : 'btn'}
             type="button"
             onClick={() => {
               buttonClick(index);

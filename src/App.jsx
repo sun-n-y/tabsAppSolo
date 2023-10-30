@@ -31,7 +31,11 @@ function App() {
 
   return (
     <main>
-      <JobButtons jobs={jobs} buttonClick={buttonClick} />
+      <JobButtons
+        jobs={jobs}
+        activeIndex={activeIndex}
+        buttonClick={buttonClick}
+      />
       <Job jobs={jobs} activeIndex={activeIndex} />
     </main>
   );
